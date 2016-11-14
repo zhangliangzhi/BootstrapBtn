@@ -1,18 +1,15 @@
 //
-//  File.swift
+//  Bootstrap Button.swift
 //  BootstrapBtn
 //
 //  Created by ZhangLiangZhi on 2016/11/15.
 //  Copyright © 2016年 xigk. All rights reserved.
 //
 
-
-// swift bootstrap sytle, Bootstrap Button swift
-
 import Foundation
 import UIKit
 
-class BsButton: UIButton
+class BootstrapBtn: UIButton
 {
     
     enum BootstrapBtnType: Int
@@ -25,7 +22,7 @@ class BsButton: UIButton
         case Danger
     }
     
-    var SFbuttonType: BootstrapBtnType = .Default
+    var BtButtonType: BootstrapBtnType = .Default
     
     required init(coder aDecoder: NSCoder)
     {
@@ -37,16 +34,16 @@ class BsButton: UIButton
         super.init(frame: frame);
     }
     
-    init(frame: CGRect, sfButtonType: BootstrapBtnType)
+    init(frame: CGRect, btButtonType: BootstrapBtnType)
     {
         super.init(frame: frame);
-        self.SFbuttonType = sfButtonType;
+        self.BtButtonType = btButtonType;
         self.setupButtons()
     }
     
     func setupButtons() -> Void
     {
-        switch (SFbuttonType)
+        switch (BtButtonType)
         {
         case .Default:
             self.setBackgroundImage(self.imageWithColorToButton(colorButton: UIColor.white), for: UIControlState.normal)
@@ -118,3 +115,4 @@ class BsButton: UIButton
         return imageReturn
     }
 }
+
