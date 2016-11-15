@@ -5,7 +5,7 @@ swift bootstrap sytle, swift3 Bootstrap Button. Use Swift3.0 Create a Button lik
 
 ![image](https://github.com/zhangliangzhi/BootstrapBtn/raw/master/bootcss_button.png)
 
-# How to use it 
+# How to use it
 ```swift3
     override func viewDidLoad() {
         super.viewDidLoad()
