@@ -6,7 +6,7 @@ swift bootstrap sytle, swift3 Bootstrap Button. Use Swift3.0 Create a Button lik
 ![image](https://github.com/zhangliangzhi/BootstrapBtn/raw/master/bootcss_button.png)
 
 # How to use it 
-`
+```swift3
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,4 +36,4 @@ swift bootstrap sytle, swift3 Bootstrap Button. Use Swift3.0 Create a Button lik
         dangerbtn.setTitle("Danger", for: UIControlState.normal)
         self.view.addSubview(dangerbtn)
     }
-`
+```
